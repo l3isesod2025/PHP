@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulaire de Vacation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    input, select, button {
+      width: 100%;
+      margin: 10px 0;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Formulaire de Vacation (Jour / Soir)</h2>
+  <form>
+    <label>Nom complet :</label>
+    <input type="text" name="nom" required>
+
+    <label>Email :</label>
+    <input type="email" name="email" required>
+
+    <label>Type de vacation :</label>
+    <select name="vacation" required>
+      <option value="">--Choisir--</option>
+      <option value="jour">Jour</option>
+      <option value="soir">Soir</option>
+    </select>
+
+    <label>Date :</label>
+    <input type="date" name="date" required>
+
+    <button type="submit">Envoyer</button>
+  </form>
+</body>
+</html>
+
+
